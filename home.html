@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>TODO List</title>
+
+    <!-- Stylesheet -->
+    <style>
+        body {
+            background: rgb(255, 255, 255);
+        }
+
+        .navbar {
+            background: rgb(255, 255, 255);
+            align-items: center;
+        }
+
+
+        .aligncenter {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#">
+            <img src="Media/logo.jpg" width="30" height="30" alt=""> TODO-LIST
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                Designed by -
+                <b> Shaikh Sajed</b>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Heading -->
+
+    <div class="container my-4">
+
+        <h2 class="text-center"> T O D O - L I S T </h2>
+        <small class="form-text text-muted text-center">Create your TODO-List here and get into action!</small>
+        <hr>
+    </div>
+
+    <!-- Body  -->
+
+    <div class="container">
+
+        <!-- Input for getting TODO  -->
+
+        <h4>ADD YOUR TODO HERE : </h4><br>
+        <div class="form-group">
+            <label for="text">What To Do?</label>
+            <textarea class="form-control" id="Description" rows="3"></textarea>
+            <small class="form-text text-muted">Don't worry your TODOs are safe with us. Go On!</small>
+        </div>
+        <button id="add" type="submit" class="btn btn-sm btn-primary">Add</button>
+
+
+        <!-- TODO List Starts  -->
+        <h4 class="my-5">YOUR TODO-LIST :</h4>
+
+        <br>
+
+        <!-- Delete All Button -->
+        <div id="buttondlt">
+
+        </div>
+
+        <!-- Two Main Rows -->
+
+        <!-- Row 1: For Incompleted Tasks  -->
+        <div class="list-group">
+
+            <!-- Header -->
+            <button type="button" class="list-group-item list-group-item-action active my-3" aria-current="true">
+                Tasks To Complete
+            </button>
+
+
+            <!-- List Of Tasks -->
+            <ul class="list-group list-group-numbered" id="todoList">
+            </ul>
+
+        </div>
+
+        <!-- Row 2: For Completed Tasks  -->
+
+
+        <div class="list-group">
+
+            <!-- Header -->
+            <button type="button" class="list-group-item list-group-item-action active my-3" aria-current="true">
+                Completed Tasks
+            </button>
+
+
+            <!-- List Of Tasks -->
+            <ul class="list-group list-group-numbered" id="ctodoList">
+            </ul>
+
+        </div>
+
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!-- Footer  -->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.2);">
+            © 2021 Copyright:
+            <h5>TODO-LIST by <strong>Shaikh Sajed</strong></h5>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+
+    <script src="home.js"></script>
+
+
+</body>
+
+</html>
